@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController //  diz ao Spring que essa classe responde requisições HTTP
 @RequestMapping("/trello") //  define que todos os endpoints dessa classe começam com /trello
+@CrossOrigin(origins = "http://localhost:5173")
 public class TrelloController {
 
     private final TrelloService trelloService;
